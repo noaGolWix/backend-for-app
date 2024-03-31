@@ -10,6 +10,7 @@ app.use(cors())
 
 // Declering get function
 app.get('/', (req, res) => {
+    console.log('this call is from', req.hostname)
     res.send('hellog there')
 })
 
